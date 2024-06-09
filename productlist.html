@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herbal Oils</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    .product-card {
+      background-color: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(0, 128, 0, 0.2);
+    }
+    .product-card img {
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+    }
+    .product-card h5 {
+      margin-top: 15px;
+      color: #28a745;
+    }
+    .product-card a {
+      text-decoration: none;
+      color: #28a745;
+    }
+    .product-card a:hover {
+      text-decoration: underline;
+    }
+    .navbar-brand .logo {
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" alt="Company Logo" class="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#products">OUR PRODUCTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container" id="products">
+    <div class="row" id="product-list">
+      <!-- Product items will be dynamically inserted here -->
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const products = [
+        { name: "ANTHOPOGON OIL", image: "photos/ANTHOPOGON.jpg", link: "plants/anthopogonoil.html" },
+        { name: "ARTEMISIA OIL", image: "photos/ARTEMISIA.jpg", link: "plants/artemisiaoil.html" },
+        { name: "CALAMUS OIL", image: "photos/CALAMUS.jpg", link: "plants/calamusoil.html" },
+        { name: "CHAMOMILE OIL", image: "photos/CHAMOMILE.jpg", link: "plants/chamomile.html" },
+        { name: "CINNAMON OIL", image: "photos/CINNAMON.jpg", link: "plants/cinnamonleafoil.html" },
+        { name: "CITRONELLA OIL", image: "photos/CITRONELLA.jpg", link: "plants/citronellaoil.html" },
+        { name: "CORNMINT OIL", image: "photos/CORNMINT.jpg", link: "plants/cornmintoil.html" },
+        { name: "FRENCH BASIL OIL", image: "photos/FRENCHBASIL.jpg", link: "plants/frenchbasiloil.html" },
+        { name: "JUNIPER BERRY OIL", image: "photos/JUNIPER.jpg", link: "plants/junperberryoil.html" },
+        { name: "LEMONGRASS OIL", image: "photos/LEMONGRASS.jpg", link: "plants/lemongrassoil.html" },
+        { name: "PALMAROSA OIL", image: "photos/PALMAROSA.jpg", link: "plants/palmarosaoil.html" },
+        { name: "SPIKENARD OIL", image: "photos/SPIKENARD.jpg", link: "plants/spikenardoil.html" },
+        { name: "SUGHANDHAKOKILA OIL", image: "photos/SUGHANDHAKOKILA.jpg", link: "plants/sugandhakokilaoil.html" },
+        { name: "VALERIAN OIL", image: "photos/VALERIAN.jpg", link: "plants/valerianoil.html" },
+        { name: "WINTERGREEN OIL", image: "photos/WINTERGREEN.jpeg", link: "plants/wintergreen.html" },
+        { name: "ZANTHOXYLUM OIL", image: "photos/ZANTHOXYLUM.jpg", link: "plants/zanthoxylumoil.html" },
+        { name: "ZEDOARY OIL", image: "photos/ZEDOARY.jpg", link: "plants/zedoaryoil.html" }
+      ];
+
+      const productList = document.getElementById('product-list');
+
+      products.forEach(product => {
+        const productCol = document.createElement('div');
+        productCol.className = 'col-md-4';
+        productCol.innerHTML = `
+          <div class="product-card">
+            <a href="${product.link}">
+              <img src="${product.image}" alt="${product.name}" style="width: 300px; height: 200px;">
+              <h5>${product.name}</h5>
+            </a>
+          </div>
+        `;
+        productList.appendChild(productCol);
+      });
+    });
+  </script>
+  <footer class="bg-success text-white py-4">
+    <div class="container text-center">
+      <p class="mb-2 font-weight-bold">NATURAL RESOURCES INDUSTRIES (P.) LTD.</p>
+      <p>Saumil Complex 4th floor, Baburam Acharya Sadak<br>
+         Sinamangal, Kathmandu, Nepal</p>
+      <p>+977-1-4110860, +977-1-4110855</p>
+      <p><a href="mailto:info@msinp.com" class="text-white">info@msinp.com</a>, <a href="mailto:info@essentialoil.com.np" class="text-white">info@essentialoil.com.np</a></p>
+    </div>
+  </footer>
+</body>
+</html>
