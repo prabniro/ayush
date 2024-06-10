@@ -178,3 +178,27 @@ section {
   width: 100%;
   left: 0;
 }
+/* Mobile view styles */
+@media (max-width: 768px) {
+  .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .carousel-caption {
+    font-size: 0.8em;
+    padding: 5px;
+  }
+
+  .carousel-item img {
+    height: auto;
+  }
+
+  .navbar .nav-link {
+    padding: 8px 10px;
+  }
+
+  .navbar .navbar-brand {
+    font-size: 1.2em;
+  }
+}
