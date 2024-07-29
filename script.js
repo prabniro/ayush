@@ -1,22 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
   const products = [
-    { name: "ANTHOPOGON Oil", image: "photos/ANTHOPOGON.jpg", link: "plants/anthopogonoil.html" },
-    { name: "ARTEMISIA Oil", image: "photos/ARTEMISIA.jpg", link: "plants/artemisiaoil.html" },
-    { name: "CALAMUS oil", image: "photos/CALAMUS.jpg", link: "plants/calamusoil.html" },
-    { name: "CHAMOMILE Oil", image: "photos/CHAMOMILE.jpg", link: "plants/chamomile.html" },
-    { name: "CINNAMON Oil", image: "photos/CINNAMON.jpg", link: "plants/cinnamonleafoil.html" },
-    { name: "CITRONELLA Oil", image: "photos/CITRONELLA.jpg", link: "plants/citronellaoil.html" },
-    { name: "CORNMINT Oil", image: "photos/CORNMINT.jpg", link: "plants/cornmintoil.html" },
-    { name: "FRENCH BASIL Oil", image: "photos/FRENCHBASIL.jpg", link: "plants/frenchbasiloil.htmls" },
-    { name: "JUNIPER BERRY Oil", image: "photos/JUNIPER.jpg", link: "plants/junperberryoil.html" },
-    { name: "LEMONGRASS Oil", image: "photos/LEMONGRASS.jpg", link: "plants/lemongrassoil.html" },
-    { name: "PALMAROSA oil", image: "photos/PALMAROSA.jpg", link: "plants/palmarosaoil.html" },
-    { name: "SPIKENARD Oil", image: "photos/SPIKENARD.jpg", link: "plants/spikenardoil.html" },
-    { name: "SUGHANDHAKOKILA Oil", image: "photos/SUGHANDHAKOKILA.jpg", link: "plants/sugandhakokilaoil.html" },
-    { name: "VALERIAN Oil", image: "photos/VALERIAN.jpg", link: "plants/valerianoil.html" },
-    { name: "Wintergreen Oil", image: "photos/WINTERGREEN.jpeg", link: "plants/wintergreen.html" },
-    { name: "ZANTHOXYLUM Oil", image: "photos/ZANTHOXYLUM.jpg", link: "plants/zanthoxylumoil.html" },
-    { name: "ZEDOARY Oil", image: "photos/ZEDOARY.jpg", link: "plants/zedoaryoil.html" }
+    { name: "ANTHOPOGON Oil", image: "photos/ANTHOPOGON.webp", link: "plants/anthopogonoil.html" },
+    { name: "ARTEMISIA Oil", image: "photos/ARTEMISIA.webp", link: "plants/artemisiaoil.html" },
+    { name: "CALAMUS oil", image: "photos/CALAMUS.webp", link: "plants/calamusoil.html" },
+    { name: "CHAMOMILE Oil", image: "photos/CHAMOMILE.webp", link: "plants/chamomile.html" },
+    { name: "CINNAMON Oil", image: "photos/CINNAMON.webp", link: "plants/cinnamonleafoil.html" },
+    { name: "CITRONELLA Oil", image: "photos/CITRONELLA.webp", link: "plants/citronellaoil.html" },
+    { name: "CORNMINT Oil", image: "photos/CORNMINT.webp", link: "plants/cornmintoil.html" },
+    { name: "FRENCH BASIL Oil", image: "photos/FRENCHBASIL.webp", link: "plants/frenchbasiloil.htmls" },
+    { name: "JUNIPER BERRY Oil", image: "photos/JUNIPER.webp", link: "plants/junperberryoil.html" },
+    { name: "LEMONGRASS Oil", image: "photos/LEMONGRASS.webp", link: "plants/lemongrassoil.html" },
+    { name: "PALMAROSA oil", image: "photos/PALMAROSA.webp", link: "plants/palmarosaoil.html" },
+    { name: "SPIKENARD Oil", image: "photos/SPIKENARD.webp", link: "plants/spikenardoil.html" },
+    { name: "SUGHANDHAKOKILA Oil", image: "photos/SUGHANDHAKOKILA.webp", link: "plants/sugandhakokilaoil.html" },
+    { name: "VALERIAN Oil", image: "photos/VALERIAN.webp", link: "plants/valerianoil.html" },
+    { name: "Wintergreen Oil", image: "photos/WINTERGREEN.webp", link: "plants/wintergreen.html" },
+    { name: "ZANTHOXYLUM Oil", image: "photos/ZANTHOXYLUM.webp", link: "plants/zanthoxylumoil.html" },
+    { name: "ZEDOARY Oil", image: "photos/ZEDOARY.webp", link: "plants/zedoaryoil.html" }
   ];
 
   const carouselInner = document.querySelector('#productCarousel .carousel-inner');
