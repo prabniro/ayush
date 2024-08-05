@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const products = [
     { name: "ANTHOPOGON Oil", image: "photos/ANTHOPOGON.webp", link: "plants/anthopogonoil.html" },
     { name: "ARTEMISIA Oil", image: "photos/ARTEMISIA.webp", link: "plants/artemisiaoil.html" },
-    { name: "CALAMUS oil", image: "photos/CALAMUS.webp", link: "plants/calamusoil.html" },
+    { name: "CALAMUS oil", image: "photos/CALAMUS.jpg", link: "plants/calamusoil.html" },
     { name: "CHAMOMILE Oil", image: "photos/CHAMOMILE.webp", link: "plants/chamomile.html" },
     { name: "CINNAMON Oil", image: "photos/CINNAMON.webp", link: "plants/cinnamonleafoil.html" },
     { name: "CITRONELLA Oil", image: "photos/CITRONELLA.webp", link: "plants/citronellaoil.html" },
